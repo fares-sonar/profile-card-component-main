@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #19a2ae;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .background .top {
+  position: absolute;
+  top: -50rem;
+  left: -30rem;
+}
+
+.container .background .bottom {
+  position: absolute;
+  bottom: -50rem;
+  right: -30rem;
+}
+
+.container .card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(/images/bg-pattern-card.svg);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.container .card .content {
+  height: 100%;
+  margin-top: 17rem;
+  text-align: center;
+  background: #fff;
+  position: relative;
+}
+
+.container .card .content img {
+  position: absolute;
+  border-radius: 50%;
+  border: 0.1rem solid #fff;
+  top: -5rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.container .card .content .info {
+  padding: 7rem 0rem 2rem;
+}
+
+.container .card .content .info h1 {
+  font-size: 3rem;
+}
+
+.container .card .content .info h1 span {
+  color: #969696;
+  font-weight: 400;
+}
+
+.container .card .content .info p {
+  color: #969696;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+
+.container .card .content .numbers {
+  padding: 4rem 4rem;
+  border-top: 0.1rem solid #6a6f81;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 7rem;
+}
+
+.container .card .content .numbers h3 {
+  font-size: 2.5rem;
+}
+
+.container .card .content .numbers p {
+  color: #969696;
+  font-size: 1.3rem;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 15rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  color: #fff;
+  font-size: 11px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .container .background .top {
+    position: absolute;
+    top: -70rem;
+    left: -60rem;
+  }
+  .container .background .bottom {
+    position: absolute;
+    bottom: -70rem;
+    right: -60rem;
+  }
+  .container .card {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .container .numbers {
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
